@@ -8,32 +8,61 @@
 <header><h1>Hacer un ejercicio de Péndulo Balístico</h1></header>
 
 <h3>Ingrese los siguientes datos para calcular la altura final del bloque</h3>
-<form name="Ejercicio_datos">
-    <p>
-        <label for="masa-bala">Masa de la bala:</label> <input type="number" name="masa-bala" placeholder="Ingrese la masa (m)" id="masa-bala">
-    </p>
-    <p>
-        <label for="velocidad-bala">Velocidad inicial de la bala: </label> <input type="number" name="velocidad-bala" placeholder="Ingrese la velocidad (Vo)" id="velocidad-bala">
-    </p>
-    <p>
-        <label for="masa-bloque">Masa del bloque:</label> <input type="number" name="masa-bloque" placeholder="Ingrese la masa (M)" id="masa-bloque">
-    </p>
-    <p>
-        <label for="velocidad-bloque">Velocidad inicial del bloque: </label> <input type="number" name="velocidad-bloque" placeholder="Ingrese la velocidad (Vb)" id="velocidad-bloque">
-    </p>
-    <p>
-        <label for="altura-bloque-inicial">Altura inicial del bloque:</label> <input type="number" name="altura-bloque-inicial" placeholder="Ingrese la altura (h)" id="altura-bloque-inicial">
-    </p>
-    <p>
-        <button> Boton de Enviar
-        </button>
-    </p>
+<form name="ejercicio_datos">
+
+    <div>
+        <div class="masa-bala">
+            <label class="mas-bala" for="input_tem1">Masa de la bala: </label> <input type="number" name="mas-bala" placeholder="Ingrese la masa (m1)" id="mas-bala">
+            <select class="mas-bala" id="input_tem1">
+                <option>g</option>
+                <option>kg</option>
+            </select>
+        </div>
+
+        <div class="velocidad-bala">
+            <label class="vel-bala" for="input_tem2">Velocidad inicial de la bala: </label> <input type="number" name="vel-bala" placeholder="Ingrese la velocidad (Vo)" id="vel-bala">
+            <select class="vel-bala" id="input_tem2">
+                <option>m/s</option>
+                <option>km/h</option>
+            </select>
+        </div>
+
+        <div class="masa-bloque">
+            <label class="mas-bloque" for="input_tem3">Masa del bloque: </label> <input type="number" name="mas-bloque" placeholder="Ingrese la masa (m2)" id="mas-bloque">
+            <select class="mas-bloque" id="input_tem3">
+                <option>g</option>
+                <option>kg</option>
+            </select>
+        </div>
+
+        <div class="velocidad-bloque">
+            <label class="vel-bloque" for="input_tema4">Velocidad inicial del bloque: </label> <input type="number" name="vel-bloque" placeholder="Ingrese la velocidad (Vb)" id="vel-bloque">
+            <select class="vel-bloque" id="input_tema4">
+                <option>m/s</option>
+                <option>km/h</option>
+            </select>
+        </div>
+
+        <div class="altura-bloque">
+            <label for="alt-bloque" for="input_tema5">Altura inicial del bloque:</label> <input type="number" name="alt-bloque" placeholder="Ingrese la altura (h)" id="alt-bloque">
+            <select class="alt-bloque" id="input_tema5">
+                <option>cm</option>
+                <option>m</option>
+            </select>
+        </div>
+
+        <div class="boton-enviar">
+            <button>Enviar
+            </button>
+        </div>
+    </div>
 
     <p>
         <label for="altura-bloque-final">La altura del bloque luego del impacto de la bala va a causar que se levante:</label> <input type="number" name="altura-bloque-final" placeholder="FALTA CALCUALAR" id="altura-bloque-final">
     </p>
 
 
-<a href="proyecto2023Fran.html">Volver a la Pagina Principal</a>
+    <a href="proyecto2023Fran.html">Volver a la Pagina Principal</a>
+
 </body>
 </html>

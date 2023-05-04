@@ -3,22 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <title>Péndulo Balístico</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="short icon" href="imagenes-html/Penduloicono.png">
+    <style>
+        body{
+            background-image: url("imagenes-html/background1.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: scroll;
+        }
+
+        #titulo{
+            color: rgb(2, 5, 12);
+        }
+
+        a:link, a:visited{
+            color: #0000FF;
+        }
+        a:hover{
+            font-size: 1.4em;
+        }
+
+        form {
+            display: block;
+            margin-top: 5em;
+        }
+
+        div{
+            background-color: rgba(0,0,22,0.2);
+            border: 2px solid rgba(13, 73, 62, 0.99);
+            margin: 10px 50px;
+            padding: 10px;
+            box-shadow: 5px 5px #044b50;
+
+        }
+
+        .imagenes{
+            margin: 15px 175px;
+            border-radius: 8px;
+
+        }
+
+        .link1, .link2, .link3{
+            margin: 13px 450px;
+            border-radius: 10px;
+        }
+
+        .cuerpopagina{
+            text-align: center;
+            font-family: 'Merriweather', serif;
+            background: linear-gradient(to right, #89fff5, #279fb2);
+        }
+
+        h1, h2, h3{
+            text-shadow: 1px 1px #3f4264;
+        }
+    </style>
 </head>
-<body>
-<header><h1>Péndulo Balístico</h1></header>
+<body class="cuerpopagina">
+<div>
+    <header><h1 id="titulo"> Péndulo Balístico</h1></header>
+    <div class="imagenes">
+    <img width="400" height="250" src="imagenes-html/Pendulo1.png">
+    <img width="400" height="250"  src= "imagenes-html/Pendulogif.jpg">
+    </div>
+</div>
 
-<img width="400" height="250" src="imagenes-html/Pendulo1.png">
-<img width="400" height="250"  src= "imagenes-html/Pendulogif.jpg">
-
-
-<p>
-    <a href="Que_es_Pendulo.html">¿Qué es Péndulo Balístico?</a> <br>
-
-    <a href="Mostrar_Ejemplo.html">Mostrar un ejemplo de Péndulo Balístico</a> <br>
-
-    <a href="Hacer_Ejercicio.html">Hacer un ejercicio de Péndulo Balístico</a> <br>
-</p>
-
-
+<div class="link1">
+    <h3><a href="Que_es_Pendulo.html" target="_blank">¿Qué es Péndulo Balístico?</a></h3>
+</div>
+<div class="link2">
+    <h3><a href="Mostrar_Ejemplo.html" target="_blank">Mostrar un ejemplo de Péndulo Balístico</a></h3>
+</div>
+<div class="link3">
+    <h3><a href="Hacer_Ejercicio.html" target="_blank">Hacer un ejercicio de Péndulo Balístico</a></h3>
+</div>
 </body>
 </html>

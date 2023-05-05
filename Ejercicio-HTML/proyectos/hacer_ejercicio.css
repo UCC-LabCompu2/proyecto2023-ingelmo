@@ -1,5 +1,4 @@
-
-#titulo2{
+#titulo4{
     color: rgb(2, 5, 12);
 }
 
@@ -12,35 +11,38 @@ a:hover{
 }
 
 form{
-    display: block;
-    margin-top: 5em;
+    width: 70%;
 }
 
 div{
     background-color: rgba(0,0,22,0.2);
     border: 2px solid #410c02;
-    margin: 10px 50px;
+    margin: 0px 120px;
     padding: 10px;
     box-shadow: 5px 5px #410c02;
 
 }
 
-.tit2{
+.tit4{
+    text-align: left;
     margin: 45px 435px;
     border-radius: 0px;
+    text-shadow: 1px 1px #3f4264;
 }
 
-.cuerpopagina2{
+.imagen1, .imagen2, .imagen3{
+    margin: 15px 235px;
+    border-radius: 8px;
+
+}
+
+.cuerpopagina4{
     text-align: center;
     font-family: 'Merriweather', serif;
-    background: linear-gradient(to right, #bb9d07, #817103);
+    background: linear-gradient(to right, #d2d2d2, #595959);
 }
 
-.volver2{
+.volver4{
     margin: 13px 480px;
     border-radius: 15px;
-}
-
-h1{
-    text-shadow: 1px 1px #3f4264;
 }

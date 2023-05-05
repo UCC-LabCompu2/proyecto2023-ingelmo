@@ -1,14 +1,8 @@
-/*no anda
-        body{
-            background-image: url("imagenes-html/background1.png");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: scroll;
-        }
-        */
+
 #titulo{
     color: rgb(2, 5, 12);
 }
+
 
 a:link, a:visited{
     color: #0000FF;
@@ -29,6 +23,10 @@ div{
     padding: 10px;
     box-shadow: 5px 5px #044b50;
 
+}
+.tit1{
+    margin: 2px 400px;
+    border-radius: 0px;
 }
 
 .imagenes{

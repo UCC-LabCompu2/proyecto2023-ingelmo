@@ -11,38 +11,63 @@ a:hover{
 }
 
 form{
-    width: 70%;
+    width: 45%;
+}
+
+.tit4{
+    text-align: center;
+    border: 2px solid #410c02;
+    margin: 10px 300px;
+    padding: 10px;
+    box-shadow: -5px 5px #410c02;
+    text-shadow: 1px 1px #3f4264;
+}
+
+.titulo4{
+    text-align: center;
+    border: 2px solid #410c02;
+    border-radius: 15px;
+    margin: 10px 100px;
+    padding: 10px;
+    box-shadow: -5px 5px #410c02;
+    text-shadow: 1px 1px #3f4264;
 }
 
 div{
     background-color: rgba(0,0,22,0.2);
     border: 2px solid #410c02;
-    margin: 0px 120px;
+    margin: 1px 120px;
     padding: 10px;
-    box-shadow: 5px 5px #410c02;
-
-}
-
-.tit4{
-    text-align: left;
-    margin: 45px 435px;
-    border-radius: 0px;
-    text-shadow: 1px 1px #3f4264;
-}
-
-.imagen1, .imagen2, .imagen3{
-    margin: 15px 235px;
-    border-radius: 8px;
+    box-shadow: -5px 5px #410c02;
 
 }
 
 .cuerpopagina4{
     text-align: center;
     font-family: 'Merriweather', serif;
-    background: linear-gradient(to right, #d2d2d2, #595959);
+    background: linear-gradient(to left, #d2d2d2, #696868);
+    margin: 13px 100px;
+}
+
+.formu1{
+    text-align: left;
+    margin: 20px 20px;
+    border-radius: 15px;
+}
+
+.formu2{
+    background-color: #ffffff;
+    margin: 13px 20px;
+
+}
+
+.formu3{
+    text-align: left;
+    margin: 13px 20px;
+    border-radius: 15px;
 }
 
 .volver4{
-    margin: 13px 480px;
+    margin: 13px 400px;
     border-radius: 15px;
 }

@@ -1,4 +1,3 @@
-
 #titulo2{
     color: rgb(2, 5, 12);
 }
@@ -16,31 +15,34 @@ form{
     margin-top: 5em;
 }
 
+.tit2{
+    margin: 15px 435px;
+    border-radius: 0px;
+    box-shadow: -5px 5px #410c02;
+    text-shadow: 1px 1px #3f4264;
+}
+
 div{
     background-color: rgba(0,0,22,0.2);
     border: 2px solid #410c02;
     margin: 10px 50px;
     padding: 10px;
-    box-shadow: 5px 5px #410c02;
+    box-shadow: -5px 5px #410c02;
 
-}
-
-.tit2{
-    margin: 45px 435px;
-    border-radius: 0px;
 }
 
 .cuerpopagina2{
     text-align: center;
     font-family: 'Merriweather', serif;
-    background: linear-gradient(to right, #bb9d07, #817103);
+    background: linear-gradient(to left, #bb9d07, #817103);
+}
+
+.imagen1, .imagen2, .imagen3{
+    margin: 12px 235px;
+    border-radius: 0px;
 }
 
 .volver2{
-    margin: 13px 480px;
+    margin: 13px 490px;
     border-radius: 15px;
-}
-
-h1{
-    text-shadow: 1px 1px #3f4264;
 }

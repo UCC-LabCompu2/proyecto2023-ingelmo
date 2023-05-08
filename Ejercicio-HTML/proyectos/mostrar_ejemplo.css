@@ -15,7 +15,7 @@ form{
     margin-top: 5em;
 }
 
-.tit2{
+.tit3{
     margin: 15px 435px;
     box-shadow: -5px 5px #410c02;
     text-shadow: 1px 1px #3f4264;
@@ -30,17 +30,17 @@ div{
 
 }
 
-.cuerpopagina2{
+.cuerpopagina3{
     text-align: center;
     font-family: 'Merriweather', serif;
-    background: linear-gradient(to left, #bb9d07, #9f8b04);
+    background: linear-gradient(to left, #f8f58b, #b4b25c);
 }
 
-.imagen1, .imagen2, .imagen3{
+.imagen1, .imagen2{
     margin: 12px 235px;
 }
 
-.volver2{
+.volver3{
     margin: 13px 490px;
     border-radius: 15px;
     text-shadow: 1px 1px #3f4264;

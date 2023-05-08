@@ -14,13 +14,14 @@
     <header><h1 id="titulo">Hacer un ejercicio de Péndulo Balístico</h1></header>
 </div>
 <div>
-    <h3 class="titulo4">Ingrese los siguientes datos para calcular la altura final del bloque (h)</h3>
+    <h3 class="titulo4">Ingrese los siguientes datos para encontrar la altura final del bloque (h):</h3>
     <form name="ejercicio_datos" class="datos">
 
         <div class=formu1>
             <ul>
                 <li>
-                    <label class="mas-bala" for="input_tem1">Masa de la bala: </label>
+                    Masa de la bala (<label class="mas-bala" for="mas-bala">valor</label> y
+                    <label class="mas-bala" for="input_tem1">unidad</label>):
                     <input type="number" name="mas-bala" placeholder="Ingrese la masa (m1)" id="mas-bala">
                     <select class="mas-bala" id="input_tem1">
                         <option>g</option>
@@ -30,7 +31,9 @@
                 </li>
 
                 <li>
-                    <label class="vel-bala" for="input_tem2">Velocidad inicial de la bala: </label> <input type="number" name="vel-bala" placeholder="Ingrese la velocidad (Vo)" id="vel-bala">
+                    Velocidad inicial de la bala (<label class="vel-bala" for="vel-bala">valor</label> y
+                    <label class="vel-bala" for="input_tem2">unidad</label>):
+                    <input type="number" name="vel-bala" placeholder="Ingrese la velocidad (Vo)" id="vel-bala">
                     <select class="vel-bala" id="input_tem2">
                         <option>m/s</option>
                         <option>km/h</option>
@@ -39,7 +42,9 @@
                 </li>
 
                 <li>
-                    <label class="mas-bloque" for="input_tem3">Masa del bloque: </label> <input type="number" name="mas-bloque" placeholder="Ingrese la masa (m2)" id="mas-bloque">
+                    Masa del bloque (<label class="mas-bloque" for="mas-bloque">valor </label> y
+                    <label class="mas-bloque" for="input_tem3">unidad</label>):
+                    <input type="number" name="mas-bloque" placeholder="Ingrese la masa (m2)" id="mas-bloque">
                     <select class="mas-bloque" id="input_tem3">
                         <option>g</option>
                         <option>kg</option>
@@ -48,18 +53,12 @@
                 </li>
 
                 <li>
-                    <label class="vel-bloque" for="input_tema4">Velocidad inicial del bloque: </label> <input type="number" name="vel-bloque" placeholder="Ingrese la velocidad (Vb)" id="vel-bloque">
-                    <select class="vel-bloque" id="input_tema4">
+                    Velocidad inicial del bloque (<label class="vel-bloque" for="vel-bloque">valor </label> y
+                    <label class="vel-bloque" for="input_tem4">unidad</label>):
+                    <input type="number" name="vel-bloque" placeholder="Ingrese la velocidad (Vb)" id="vel-bloque">
+                    <select class="vel-bloque" id="input_tem4">
                         <option>m/s</option>
                         <option>km/h</option>
-                    </select>
-                    <p></p>
-                </li>
-                <li>
-                    <label class="alt-bloque" for="input_tema5">Altura inicial del bloque:</label> <input type="number" name="alt-bloque" placeholder="Ingrese la altura (h)" id="alt-bloque">
-                    <select class="alt-bloque" id="input_tema5">
-                        <option>cm</option>
-                        <option>m</option>
                     </select>
                     <p></p>
                 </li>
@@ -73,7 +72,7 @@
         </div>
 
         <div class=formu3>
-            <label for="altura-bloque-final">La altura del bloque luego del impacto de la bala va a causar que se levante:</label> <input name="altura-bloque-final" placeholder="FALTA CALCUALAR" id="altura-bloque-final">
+            <label for="altura-bloque-final">La altura final del bloque (h) es: </label> <input name="altura-bloque-final" placeholder="FALTA CALCUALAR" id="altura-bloque-final">
         </div>
     </form>
 </div>

@@ -22,7 +22,7 @@
                 <li>
                     Masa de la bala (<label class="mas-bala" for="mas-bala">valor</label> y
                     <label class="mas-bala" for="input_tem1">unidad</label>):
-                    <input type="number" name="mas-bala" placeholder="Ingrese la masa (m1)" id="mas-bala">
+                    <input type="number" min="0" name="mas-bala" placeholder="Ingrese la masa (m1)" id="mas-bala">
                     <select class="mas-bala" id="input_tem1">
                         <option>g</option>
                         <option>kg</option>
@@ -33,7 +33,7 @@
                 <li>
                     Velocidad inicial de la bala (<label class="vel-bala" for="vel-bala">valor</label> y
                     <label class="vel-bala" for="input_tem2">unidad</label>):
-                    <input type="number" name="vel-bala" placeholder="Ingrese la velocidad (Vo)" id="vel-bala">
+                    <input type="number" min="0" name="vel-bala" placeholder="Ingrese la velocidad (Vo)" id="vel-bala">
                     <select class="vel-bala" id="input_tem2">
                         <option>m/s</option>
                         <option>km/h</option>
@@ -44,7 +44,7 @@
                 <li>
                     Masa del bloque (<label class="mas-bloque" for="mas-bloque">valor </label> y
                     <label class="mas-bloque" for="input_tem3">unidad</label>):
-                    <input type="number" name="mas-bloque" placeholder="Ingrese la masa (m2)" id="mas-bloque">
+                    <input type="number" min="0" name="mas-bloque" placeholder="Ingrese la masa (m2)" id="mas-bloque">
                     <select class="mas-bloque" id="input_tem3">
                         <option>g</option>
                         <option>kg</option>
@@ -55,14 +55,17 @@
                 <li>
                     Velocidad inicial del bloque (<label class="vel-bloque" for="vel-bloque">valor </label> y
                     <label class="vel-bloque" for="input_tem4">unidad</label>):
-                    <input type="number" name="vel-bloque" placeholder="Ingrese la velocidad (Vb)" id="vel-bloque">
+                    <input type="number" min="0" name="vel-bloque" placeholder="Ingrese la velocidad (Vb)" id="vel-bloque">
                     <select class="vel-bloque" id="input_tem4">
                         <option>m/s</option>
                         <option>km/h</option>
                     </select>
                     <p></p>
                 </li>
-                <button type="submit" class="boton">Enviar
+                <button type="submit" class="enviar">Enviar
+                </button>
+
+                <button type="submit" class="restablecer">Restablecer los valores
                 </button>
             </ul>
         </div>

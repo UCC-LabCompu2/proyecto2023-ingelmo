@@ -1,5 +1,5 @@
 # Péndulo Balístico
-Primer proyecto Lab2:
+Primer proyecto de Laboratorio de Computacion 2:
 
 ## Autor
 * Francisco  **Ingelmo**
@@ -16,7 +16,7 @@ Se trata de una página web en donde uno puede:
 3. Uno puede hacer un **ejercicio** de Péndulo Balístico escribiendo los valores de los datos.
 
 ## Links del Proyecto: 
-* **Menu de la Página:** (http://localhost:63342/proyecto2023-ingelmo/Primer-Parcial-Lab2/ejercicio-html/proyectos/index.html)
+* **Link de la Página:** (http://localhost:63342/proyecto2023-ingelmo/Primer-Parcial-Lab2/ejercicio-html/proyectos/index.html?_ijt=jo3ccdt6lrurfh2rk4m6gojeaa&_ij_reload=RELOAD_ON_SAVE)
 * **Link del Github** (https://github.com/UCC-LabCompu2/proyecto2023-ingelmo/tree/main/Primer-Parcial-Lab2/Ejercicio-HTML)					
 
 ## Contenidos del github:
@@ -24,19 +24,6 @@ Se trata de una página web en donde uno puede:
 | Nombre del proyecto | Que es? |
 |---------------------|---------|
 |index|Página principal del proyecto|
-|-----|-----------------------------|
 |definicion|Definicion del proyecto|
-|----------|-----------------------|
 |ejemplo|Ejemplo del proyecto|
-|-------|--------------------|
 |ejercicio|Ejercicio del proyecto|
-|---------|----------------------|
-
---> HTML de la página principal 
- --> CSS de la página principal
-definicion.html --> HTML de la definicion
-definicion.css --> CSS de la definicion
-ejemplo.html --> HTML del ejemplo
-ejemplo.css --> CSS del ejemplo
-ejercicio.html --> HTML del ejercicio
-ejercicio.html --> CSS del ejercicio

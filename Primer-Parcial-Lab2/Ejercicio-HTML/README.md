@@ -16,8 +16,9 @@ Se trata de una página web en donde uno puede:
 3. Uno puede hacer un **ejercicio** de Péndulo Balístico escribiendo los valores de los datos.
 
 ## Links del Proyecto: 
-* **Link de la Página:** (http://localhost:63342/proyecto2023-ingelmo/Primer-Parcial-Lab2/ejercicio-html/proyectos/index.html?_ijt=jo3ccdt6lrurfh2rk4m6gojeaa&_ij_reload=RELOAD_ON_SAVE)
-* **Link del Github** (https://github.com/UCC-LabCompu2/proyecto2023-ingelmo/tree/main/Primer-Parcial-Lab2/Ejercicio-HTML)					
+* **Link de las imágenes utilizadas:** (https://github.com/UCC-LabCompu2/proyecto2023-ingelmo/tree/main/Primer-Parcial-Lab2/Ejercicio-HTML/imagenes-html)
+* **Link de los proyectos en Github** (https://github.com/UCC-LabCompu2/proyecto2023-ingelmo/tree/main/Primer-Parcial-Lab2/Ejercicio-HTML/proyectos)					
+* **Link de la página web** (http://localhost:63342/proyecto2023-ingelmo/Primer-Parcial-Lab2/ejercicio-html/proyectos/index.html)
 
 ## Contenidos del github:
 

@@ -12,7 +12,7 @@ Estructura de Proyecto Lab de Compu II - 2023
 - [X] El repositorio no debe contener archivos innecesarios (no debe contener .idea o .vsc, en todo caso emplear **.gitignore**)
 
 ### Sobre el Proyecto General
-- [ ] La página principal debe llamarse index
+- [X] La página principal debe llamarse index
 - [X] Identar correctamente el código (en Webstorm Ctrl+Alt+L)
 - [ ] No debe haber errores presentes (realizar *Code* > *Inspect Code* para verificar que no haya errores)
 - [X] Se debe emplear algún favicon
@@ -42,7 +42,7 @@ Estructura de Proyecto Lab de Compu II - 2023
 - [X] No emplear !important
 
 ### Sobre Accesibilidad:
-- [ ] Toda imagen debe tener su etiqueta alt
+- [X] Toda imagen debe tener su etiqueta alt
 - [X] Todo ```<input>``` o ```<select>``` debe tener su ```<label>```
 - [ ] Los labels deben contener el atributo **for** (el for debe contener el id del input al cual se referencia) 
 - [X] Si hay una tabla en la página, debe contener ```<caption></caption>```

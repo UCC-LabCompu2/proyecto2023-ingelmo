@@ -23,4 +23,5 @@ Se trata de una página web en donde uno puede:
 
 ## Links del Proyecto: 
 * **Link de las imágenes utilizadas:** (https://github.com/UCC-LabCompu2/proyecto2023-ingelmo/tree/main/Primer-Parcial-Lab2/Ejercicio-HTML/imagenes-html)
-* **Link de los proyectos en Github** (https://github.com/UCC-LabCompu2/proyecto2023-ingelmo/tree/main/Primer-Parcial-Lab2/Ejercicio-HTML/proyectos)					
+* **Link de los proyectos en Github** (https://github.com/UCC-LabCompu2/proyecto2023-ingelmo/tree/main/Primer-Parcial-Lab2/Ejercicio-HTML/proyectos)
+* **Link del Mockup del proyecto** (https://www.figma.com/file/Npug5NmptHhRZtqwQiU8kA/P%C3%A9ndulo-Bal%C3%ADstico?type=design&node-id=0-1&t=rOyTbEsXDDJ2SqUp-0)					

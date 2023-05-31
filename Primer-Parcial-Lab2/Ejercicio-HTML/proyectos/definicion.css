@@ -27,7 +27,6 @@ div{
     margin: 10px 50px;
     padding: 10px;
     box-shadow: -5px 5px #410c02;
-
 }
 
 .cuerpopagina2{
@@ -36,11 +35,11 @@ div{
     background: linear-gradient(to left, #bb9d07, #9f8b04);
 }
 
-.imagen1, .imagen2, .imagen3{
+.imagendef1, .imagendef2, .imagendef3{
     margin: 12px 235px;
 }
 
-.volver2{
+.volver{
     margin: 13px 490px;
     border-radius: 15px;
     text-shadow: 1px 1px #3f4264;

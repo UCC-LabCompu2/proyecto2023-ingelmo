@@ -13,7 +13,7 @@ form {
 
 /**
  * Todo lo que se usa en el index.html:
- *  tit1, imagenesindex, link1, link2, link3, cuerpopagina1, h1, h2, h3
+ *  tit1, imagenesindex, links, cuerpopagina1, aut
  */
 
 .tit1 {
@@ -26,7 +26,7 @@ form {
 }
 
 .imagenesindex{
-    margin: 15px 175px;
+    margin: 15px 200px;
     border-radius: 8px;
 
     background-color: rgba(0,0,22,0.2);
@@ -35,13 +35,15 @@ form {
     box-shadow: -5px 5px #044b50;
 }
 
-.link1, .link2, .link3{
-    margin: 13px 450px;
+.links{
+    margin: 15px 350px;
     border-radius: 10px;
     background-color: rgba(0,0,22,0.2);
     border: 2px solid rgba(13, 73, 62, 0.99);
     padding: 10px;
     box-shadow: -5px 5px #044b50;
+    text-shadow: -1px 1px #3f4264;
+
 }
 
 .cuerpopagina1{
@@ -50,7 +52,13 @@ form {
     background: linear-gradient(to left, #9ffdf5, #34d2ec);
 }
 
-h1, h2, h3{
+.aut{
+    margin: 10px 570px;
+    border-radius: 10px;
+    background-color: rgba(0,0,22,0.2);
+    border: 2px solid rgba(13, 73, 62, 0.99);
+    padding: 2px;
+    box-shadow: -5px 5px #044b50;
     text-shadow: -1px 1px #3f4264;
 }
 
@@ -140,7 +148,7 @@ h1, h2, h3{
 .tit4{
     text-align: center;
     border: 2px solid #410c02;
-    margin: 15px 350px;
+    margin: 10px 350px;
     padding: 10px;
     box-shadow: -5px 5px #410c02;
     text-shadow: -1px 1px #3f4264;
@@ -151,7 +159,7 @@ h1, h2, h3{
     text-align: center;
     border: 2px solid #410c02;
     border-radius: 15px;
-    margin: 15px 350px;
+    margin: 10px 350px;
     padding: 10px;
     box-shadow: -5px 5px #410c02;
     text-shadow: -1px 1px #3f4264;
@@ -165,17 +173,17 @@ h1, h2, h3{
 .dat{
     text-align: center;
     text-shadow: -1px 1px #3f4264;
-    margin: 20px 320px;
+    margin: 5px 320px;
     background-color: rgba(0,0,22,0.2);
     border: 2px solid #410c02;
-    padding: 5px;
+    padding-top: 10px;
     box-shadow: -5px 5px #410c02;
 }
 
 .formu1{
     color: rgb(2, 5, 12);
     text-shadow: -1px 1px #3f4264;
-    margin: 20px 150px;
+    margin: 10px 150px;
     background-color: rgba(0,0,22,0.2);
     border: 2px solid #410c02;
     padding: 10px;

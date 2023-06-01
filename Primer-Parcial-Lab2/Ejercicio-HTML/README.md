@@ -1,5 +1,5 @@
 # Péndulo Balístico
-Primer proyecto de Laboratorio de Computacion 2:
+Primer proyecto de Laboratorio de Computación 2:
 
 ## Descripción
 | Email | Autor |Tecnologias Usadas|
@@ -8,7 +8,7 @@ Primer proyecto de Laboratorio de Computacion 2:
 
 ## Contenido de la página
 Se trata de una página web en donde uno puede:
-1. Ver la **definicion** de Péndulo Balístico.
+1. Ver la **definición** de Péndulo Balístico.
 2. Ver un **ejemplo** de Péndulo Balístico con los calculos usados y como fueron usados.
 3. Uno puede hacer un **ejercicio** de Péndulo Balístico escribiendo los valores de los datos.
 
@@ -17,7 +17,7 @@ Se trata de una página web en donde uno puede:
 | Nombre del proyecto | ¿Qué es? |
 |---------------------|---------|
 |index|Página principal del proyecto|
-|definicion|Definicion del proyecto|
+|definicion|Definición del proyecto|
 |ejemplo|Ejemplo del proyecto|
 |ejercicio|Ejercicio del proyecto|
 

@@ -8,32 +8,40 @@ a:hover{
 form {
     display: block;
     margin-top: 5em;
+    width: 100%;
 }
+
+/**
+ * Todo lo que se usa en el index.html:
+ *  tit1, imagenesindex, link1, link2, link3, cuerpopagina1, h1, h2, h3
+ */
 
 .tit1 {
     color: rgb(2, 5, 12);
-    margin: 2px 400px;
-}
-
-
-div{
+    margin: 10px 380px;
     background-color: rgba(0,0,22,0.2);
     border: 2px solid rgba(13, 73, 62, 0.99);
-    margin: 10px 50px;
-    padding: 10px;
+    padding: 12px;
     box-shadow: -5px 5px #044b50;
-
 }
 
 .imagenesindex{
     margin: 15px 175px;
     border-radius: 8px;
 
+    background-color: rgba(0,0,22,0.2);
+    border: 2px solid rgba(13, 73, 62, 0.99);
+    padding: 10px;
+    box-shadow: -5px 5px #044b50;
 }
 
 .link1, .link2, .link3{
     margin: 13px 450px;
     border-radius: 10px;
+    background-color: rgba(0,0,22,0.2);
+    border: 2px solid rgba(13, 73, 62, 0.99);
+    padding: 10px;
+    box-shadow: -5px 5px #044b50;
 }
 
 .cuerpopagina1{
@@ -45,3 +53,168 @@ div{
 h1, h2, h3{
     text-shadow: -1px 1px #3f4264;
 }
+
+/**
+ * Todo lo que se usa en el definicion.html:
+ *  tit2, cuerpopagina2, imagendef1, imagendef2, imagendef3, volver2
+ */
+
+.tit2{
+    background-color: rgba(0,0,22,0.2);
+    border: 2px solid #410c02;
+    margin: 10px 380px;
+    padding: 12px;
+    box-shadow: -5px 5px #410c02;
+    text-shadow: 1px 1px #3f4264;
+}
+
+.cuerpopagina2{
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    background: linear-gradient(to left, #bb9d07, #9f8b04);
+}
+
+.imagendef1, .imagendef2, .imagendef3{
+    background-color: rgba(0,0,22,0.2);
+    border: 2px solid #410c02;
+    margin: 15px 310px;
+    padding: 15px;
+    box-shadow: -5px 5px #410c02;
+    text-shadow: 1px 1px #3f4264;
+}
+
+.volver2{
+    margin: 13px 520px;
+    border-radius: 15px;
+    text-shadow: 1px 1px #3f4264;
+    background-color: rgba(0,0,22,0.2);
+    border: 2px solid #410c02;
+    padding: 12px;
+    box-shadow: -5px 5px #410c02;
+}
+
+/**
+ * Todo lo que se usa en el ejemplo.html:
+ *  tit3, cuerpopagina3, imagen4, imagen5, volver3
+ */
+
+.tit3{
+    background-color: rgba(0,0,22,0.2);
+    border: 2px solid #410c02;
+    margin: 10px 380px;
+    padding: 12px;
+    box-shadow: -5px 5px #410c02;
+    text-shadow: 1px 1px #3f4264;
+}
+
+.cuerpopagina3{
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    background: linear-gradient(to left, #f8f58b, #b4b25c);
+}
+
+.imagen4, .imagen5{
+    background-color: rgba(0,0,22,0.2);
+    border: 2px solid #410c02;
+    margin: 10px 300px;
+    padding: 12px;
+    box-shadow: -5px 5px #410c02;
+    text-shadow: 1px 1px #3f4264;
+}
+
+.volver3{
+    margin: 13px 520px;
+    border-radius: 15px;
+    text-shadow: 1px 1px #3f4264;
+    background-color: rgba(0,0,22,0.2);
+    border: 2px solid #410c02;
+    padding: 12px;
+    box-shadow: -5px 5px #410c02;
+}
+
+/**
+ * Todo lo que se usa en el ejercicio.html:
+ *  tit4, titulo4, cuerpopagina4, dat, formu1, formu2, formu3, enviar, restablecer, volver4
+ */
+
+.tit4{
+    text-align: center;
+    border: 2px solid #410c02;
+    margin: 15px 350px;
+    padding: 10px;
+    box-shadow: -5px 5px #410c02;
+    text-shadow: -1px 1px #3f4264;
+}
+
+.titulo4{
+    color: rgb(2, 5, 12);
+    text-align: center;
+    border: 2px solid #410c02;
+    border-radius: 15px;
+    margin: 15px 350px;
+    padding: 10px;
+    box-shadow: -5px 5px #410c02;
+    text-shadow: -1px 1px #3f4264;
+}
+
+.cuerpopagina4{
+    font-family: 'Merriweather', serif;
+    background: linear-gradient(to left, #c07868, #8d402d);
+}
+
+.dat{
+    text-align: center;
+    text-shadow: -1px 1px #3f4264;
+    margin: 20px 320px;
+    background-color: rgba(0,0,22,0.2);
+    border: 2px solid #410c02;
+    padding: 5px;
+    box-shadow: -5px 5px #410c02;
+}
+
+.formu1{
+    color: rgb(2, 5, 12);
+    text-shadow: -1px 1px #3f4264;
+    margin: 20px 150px;
+    background-color: rgba(0,0,22,0.2);
+    border: 2px solid #410c02;
+    padding: 10px;
+    box-shadow: -5px 5px #410c02;
+}
+
+.formu2{
+    background-color: #ffffff;
+    margin: 20px 100px;
+    border: 2px solid #030303;
+    padding: 10px;
+    box-shadow: -5px 5px #410c02;
+}
+
+.formu3{
+    margin: 20px 150px;
+    background-color: rgba(0,0,22,0.2);
+    border: 2px solid #410c02;
+    padding: 10px;
+    box-shadow: -5px 5px #410c02;
+    text-shadow: -1px 1px #3f4264;
+}
+
+.enviar{
+    background-color: #facdb1;
+}
+
+.restablecer{
+    background-color: #fcad95;
+}
+
+.volver4{
+    margin: 13px 480px;
+    border-radius: 15px;
+    text-shadow: 1px 1px #3f4264;
+    text-align: center;
+    background-color: rgba(0,0,22,0.2);
+    border: 2px solid #410c02;
+    padding: 10px;
+    box-shadow: -5px 5px #410c02;
+}
+

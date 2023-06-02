@@ -94,4 +94,3 @@ let reset = () => {
 
     canvas.width = canvas.width;
 }
-

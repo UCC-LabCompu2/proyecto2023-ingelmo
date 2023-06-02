@@ -1,4 +1,3 @@
-
 /**
  * Muestra en pantalla el valor que se ingreso en la barra
  * @method mostrarValor
@@ -22,6 +21,7 @@ let calcularOp = () => {
 
     if (masa1 === 0 || vel1 === 0 || masa2 === 0 || vel2 === 0) {
         alert("Error los valores ingresados no pueden ser iguales a cero ");
+        reset();//Como hacer ara resetear todo??
     }
     res1= (masa1+masa2)*(masa1+masa2); //Los calculos para encontrar la altura final del bloque
     res2= (vel1*vel1);
@@ -34,11 +34,14 @@ let calcularOp = () => {
     document.getElementById("altura_final").textContent = resultadofinal;
 }
 
+/**
+ * Esta funcion sirve para mostrar un canvas cuando se apreta el boton enviar y los valores ingresados son correctos
+ * @method dibujarPendulo
+ */
 let dibujarPendulo = () => {
     const canvas = document.getElementById("myCanvas");
     const ctx = canvas.getContext("2d");
 
-    //Se usa el ancho y altura max para que cuanco uno quiera hacer el canvas mas grande, siempre este centrado
     const anchoMax = canvas.width;
     const alturaMax = canvas.height;
     const margen = 8;
@@ -47,7 +50,7 @@ let dibujarPendulo = () => {
     ctx.beginPath();
     ctx.fillStyle = "#36b2c2"
     //Cuadrado: (x, y, largo, ancho)
-    ctx.fillRect(180+margen, alturaMax-200-margen, 150, 100); //Se pone alturaMax-100 para que aparezca correctamente el cuadrado dentro del canvas
+    ctx.fillRect(180 + margen, alturaMax - 200 - margen, 150, 100);
     ctx.stroke();
     ctx.fill();
     ctx.closePath();
@@ -56,7 +59,7 @@ let dibujarPendulo = () => {
     ctx.beginPath();
     ctx.fillStyle = "#0d3b42"
     //Cuadrado: (x, y, largo, ancho)
-    ctx.fillRect(0+margen, 0-margen, anchoMax-175, 90);
+    ctx.fillRect(margen, 0-margen, anchoMax-175, 90);
     ctx.stroke();
     ctx.fill();
     ctx.closePath();
@@ -65,22 +68,23 @@ let dibujarPendulo = () => {
     ctx.beginPath();
     ctx.fillStyle = "#061d21"
     //Cuadrado: (x, y, largo, ancho)
-    ctx.fillRect(220+margen, 90-margen, 1, alturaMax-290);
+    ctx.fillRect(220 + margen, 90 - margen, 1, alturaMax - 290);
+    ctx.fillRect(290 + margen, 90 - margen, 1, alturaMax - 290);
     ctx.stroke();
     ctx.fill();
     ctx.closePath();
-
-    //Dibujo del cuadrado 4
-    ctx.beginPath();
-    ctx.fillStyle = "#061d21"
-    //Cuadrado: (x, y, largo, ancho)
-    ctx.fillRect(290+margen, 90-margen, 1, alturaMax-290);
-    ctx.stroke();
-    ctx.fill();
-    ctx.closePath();
-
 
 
 }
 
+/**
+ * Esta funcion sirve para resetear el canvas cuando uno aprete el botos de restablecer los valores
+ * @method calcularOp
+ */
+let reset = () => {
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+
+    canvas.width = canvas.width;
+}
 

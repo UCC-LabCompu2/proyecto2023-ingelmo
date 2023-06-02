@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="index.css" type="text/css">
     <script type="text/javascript" src="javascript.js"></script>
 </head>
-<body class="cuerpopagina4" onload="dibujarPendulo()">
+<body class="cuerpopagina4">
 <div class="tit4">
     <header><h1 id="titulo">Hacer un ejercicio de Péndulo Balístico</h1></header>
 </div>
@@ -43,8 +43,8 @@
             </p>
 
             <p>
-                <button type="button" class="enviar" value="mostrar" valid="botoncalculo" onclick="calcularOp()/*; hacerAnimacion()*/"> Enviar </button>
-                <button type="submit" class="restablecer" id="botonrestablecer"> Restablecer los valores </button>
+                <button type="button" class="enviar" value="mostrar" valid="botoncalculo" onclick="calcularOp();dibujarPendulo()"> Enviar </button>
+                <button type="submit" class="restablecer" id="botonrestablecer" onclick="reset()"> Restablecer los valores </button>
             </p>
         </div>
     </form>
@@ -55,7 +55,7 @@
     </div>
 
     <div class="res">
-        <label for="altura_final">Luego del impacto de la bala, la altura final del bloque es (h): </label>
+        <label for="altura_final">Luego del impacto de la bala, el bloque se va a elevar (h): </label>
         <span id="altura_final" name="altura_final"> </span>
         metro/s
     </div>

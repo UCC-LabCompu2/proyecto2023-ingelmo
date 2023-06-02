@@ -27,3 +27,4 @@ Se trata de una página web en donde uno puede:
 [**Link de las imágenes utilizadas**](https://github.com/UCC-LabCompu2/proyecto2023-ingelmo/tree/main/Primer-Parcial-Lab2/Ejercicio-HTML/imagenes)
 
 [**Link del mockup utilizado**](https://github.com/UCC-LabCompu2/proyecto2023-ingelmo/tree/main/Primer-Parcial-Lab2/Ejercicio-HTML/MOCKUP)
+

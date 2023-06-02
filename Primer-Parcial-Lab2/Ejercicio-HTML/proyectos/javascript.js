@@ -21,16 +21,19 @@ let calcularOp = () => {
 
     if (masa1 === 0 || vel1 === 0 || masa2 === 0 || vel2 === 0) {
         alert("Error los valores ingresados no pueden ser iguales a cero ");
-    }
-    res1= (masa1+masa2)*(masa1+masa2); //Los calculos para encontrar la altura final del bloque
-    res2= (vel1*vel1);
-    res3= (masa1*masa1);
-    res4= res2*res3;
-    resultadofinal= res4/(res1*2*9.8);
-    resultadofinal=resultadofinal*0.01;
+        reset();
+    }else {
+        res1 = (masa1 + masa2) * (masa1 + masa2); //Los calculos para encontrar la altura final del bloque
+        res2 = (vel1 * vel1);
+        res3 = (masa1 * masa1);
+        res4 = res2 * res3;
+        resultadofinal = res4 / (res1 * 2 * 9.8);
+        resultadofinal = resultadofinal * 0.01;
 
-    resultadofinal= Math.round(resultadofinal*100)/100; //Para redondear el resultado final, cuando se ingresen valores muy bajos va a dar 0 como resultado final
-    document.getElementById("altura_final").textContent = resultadofinal;
+        resultadofinal = Math.round(resultadofinal * 100) / 100; //Para redondear el resultado final, cuando se ingresen valores muy bajos va a dar 0 como resultado final
+        document.getElementById("altura_final").textContent = resultadofinal;
+        dibujarPendulo();
+    }
 }
 
 /**

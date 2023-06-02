@@ -18,46 +18,46 @@
 <div class="tit4">
     <header><h1 id="titulo">Hacer un ejercicio de Péndulo Balístico</h1></header>
 </div>
-    <h3 class="titulo4">Ingrese los siguientes datos para encontrar la altura final del bloque (h):</h3>
-    <form name="ejercicio_datos" class="datos">
-        <div class="dat">
-            <p>
-                <label for="mas-bala">Masa Inicial de la bala (m1):</label>
-                <input type="range" id="mas-bala" name="masa1inicial" value="0" min="0" max="50" step="0.5" oninput="mostrarValor('valor1', this.value)">
-                <span id="valor1">0</span>
-                g
-            </p>
+<h3 class="titulo4">Ingrese los siguientes datos para encontrar la altura final del bloque (h):</h3>
+<form name="ejercicio_datos" class="datos">
+    <div class="dat">
+        <p>
+            <label for="mas-bala">Masa Inicial de la bala (m1):</label>
+            <input type="range" id="mas-bala" name="masa1inicial" value="0" min="0" max="50" step="0.5" oninput="mostrarValor('valor1', this.value)">
+            <span id="valor1">0</span>
+            g
+        </p>
 
-            <p>
-                <label for="vel-bala">Velocidad Inicial de la bala (v1):</label>
-                <input type="range" id="vel-bala" name="velocidad1inicial" value="0" min="0" max="100" step="0.1" oninput="mostrarValor('valor2', this.value)">
-                <span id="valor2">0</span>
-                m/s
-            </p>
+        <p>
+            <label for="vel-bala">Velocidad Inicial de la bala (v1):</label>
+            <input type="range" id="vel-bala" name="velocidad1inicial" value="0" min="0" max="100" step="0.1" oninput="mostrarValor('valor2', this.value)">
+            <span id="valor2">0</span>
+            m/s
+        </p>
 
-            <p>
-                <label for="mas-bloque">Masa Inicial del bloque (m2):</label>
-                <input type="range" id="mas-bloque" name="masa2inicial" value="0" min="0" max="100" step="0.5" oninput="mostrarValor('valor3', this.value)">
-                <span id="valor3">0</span>
-                g
-            </p>
+        <p>
+            <label for="mas-bloque">Masa Inicial del bloque (m2):</label>
+            <input type="range" id="mas-bloque" name="masa2inicial" value="0" min="0" max="100" step="0.5" oninput="mostrarValor('valor3', this.value)">
+            <span id="valor3">0</span>
+            g
+        </p>
 
-            <p>
-                <button type="button" class="enviar" value="mostrar" valid="botoncalculo" onclick="calcularOp();dibujarPendulo()"> Enviar </button>
-                <button type="submit" class="restablecer" id="botonrestablecer" onclick="reset()"> Restablecer los valores </button>
-            </p>
-        </div>
-    </form>
-    <div class="can">
-        <canvas id="myCanvas" class="ejer" width="800px" height="450px"></canvas>
-        <p></p>
+        <p>
+            <button type="button" class="enviar" value="mostrar" valid="botoncalculo" onclick="calcularOp()"> Enviar </button>
+            <button type="submit" class="restablecer" id="botonrestablecer" onclick="reset()"> Restablecer los valores </button>
+        </p>
     </div>
+</form>
+<div class="can">
+    <canvas id="myCanvas" class="ejer" width="800px" height="450px"></canvas>
+    <p></p>
+</div>
 
-    <div class="res">
-        <label for="altura_final">Luego del impacto de la bala, el bloque se va a elevar (h): </label>
-        <span id="altura_final" name="altura_final"> </span>
-        metro/s
-    </div>
+<div class="res">
+    <label for="altura_final">Luego del impacto de la bala, el bloque se va a elevar (h): </label>
+    <span id="altura_final" name="altura_final"> </span>
+    metro/s
+</div>
 
 <div class="volver4">
     <a href="index.html">Volver a la Página Principal</a>

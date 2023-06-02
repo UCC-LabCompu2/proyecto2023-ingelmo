@@ -191,15 +191,17 @@ form {
 }
 
 .can{
+    text-align: center;
     background-color: #ffffff;
-    margin: 20px 100px;
+    margin: 20px 400px;
     border: 2px solid #030303;
     padding: 10px;
     box-shadow: -5px 5px #410c02;
 }
 
 .res{
-    margin: 20px 150px;
+    text-align: center;
+    margin: 20px 400px;
     background-color: rgba(0,0,22,0.2);
     border: 2px solid #410c02;
     padding: 10px;

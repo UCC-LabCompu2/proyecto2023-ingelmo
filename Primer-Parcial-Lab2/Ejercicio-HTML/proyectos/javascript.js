@@ -28,10 +28,59 @@ let calcularOp = () => {
     res3= (masa1*masa1);
     res4= res2*res3;
     resultadofinal= res4/(res1*2*9.8);
+    resultadofinal=resultadofinal*0.01;
 
     resultadofinal= Math.round(resultadofinal*100)/100; //Para redondear el resultado final, cuando se ingresen valores muy bajos va a dar 0 como resultado final
     document.getElementById("altura_final").textContent = resultadofinal;
 }
 
+let dibujarPendulo = () => {
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+
+    //Se usa el ancho y altura max para que cuanco uno quiera hacer el canvas mas grande, siempre este centrado
+    const anchoMax = canvas.width;
+    const alturaMax = canvas.height;
+    const margen = 8;
+
+    //Dibujo del cuadrado 1
+    ctx.beginPath();
+    ctx.fillStyle = "#36b2c2"
+    //Cuadrado: (x, y, largo, ancho)
+    ctx.fillRect(180+margen, alturaMax-200-margen, 150, 100); //Se pone alturaMax-100 para que aparezca correctamente el cuadrado dentro del canvas
+    ctx.stroke();
+    ctx.fill();
+    ctx.closePath();
+
+    //Dibujo del cuadrado 2
+    ctx.beginPath();
+    ctx.fillStyle = "#0d3b42"
+    //Cuadrado: (x, y, largo, ancho)
+    ctx.fillRect(0+margen, 0-margen, anchoMax-175, 90);
+    ctx.stroke();
+    ctx.fill();
+    ctx.closePath();
+
+    //Dibujo del cuadrado 3
+    ctx.beginPath();
+    ctx.fillStyle = "#061d21"
+    //Cuadrado: (x, y, largo, ancho)
+    ctx.fillRect(220+margen, 90-margen, 1, alturaMax-290);
+    ctx.stroke();
+    ctx.fill();
+    ctx.closePath();
+
+    //Dibujo del cuadrado 4
+    ctx.beginPath();
+    ctx.fillStyle = "#061d21"
+    //Cuadrado: (x, y, largo, ancho)
+    ctx.fillRect(290+margen, 90-margen, 1, alturaMax-290);
+    ctx.stroke();
+    ctx.fill();
+    ctx.closePath();
+
+
+
+}
 
 

@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
     <link rel="short icon" href="../imagenes/penduloicono.png">
     <link rel="stylesheet" href="index.css" type="text/css">
+    <script type="text/javascript" src="javascript.js"></script>
 </head>
 <body class="cuerpopagina4">
 <div class="tit4">
@@ -21,69 +22,46 @@
     <h3 class="titulo4">Ingrese los siguientes datos para encontrar la altura final del bloque (h):</h3>
     <form name="ejercicio_datos" class="datos">
         <div class="dat">
-            <h3>
-            <div class=formu1>
-                <ul class="datos">
-                    <li>
-                        Masa de la bala (<label class="mas-bala" for="mas-bala">valor</label> y
-                        <label class="mas-bala" for="input_tem1">unidad</label>):
-                        <input type="number" min="0" name="mas-bala" placeholder="Ingrese la masa (m1)" id="mas-bala">
-                        <select class="mas-bala" id="input_tem1">
-                            <option>g</option>
-                            <option>kg</option>
-                        </select>
-                        <p></p>
-                    </li>
+        <p>
+            <label for="mas-bala">Masa Inicial de la bala (m1):</label>
+            <input type="range" id="mas-bala" name="masa1inicial" value="0" min="0" max="50" step="0.5" oninput="mostrarValor('valor1', this.value)">
+            <span id="valor1">0</span>
+            g
+        </p>
 
-                    <li>
-                        Velocidad inicial de la bala (<label class="vel-bala" for="vel-bala">valor</label> y
-                        <label class="vel-bala" for="input_tem2">unidad</label>):
-                        <input type="number" min="0" name="vel-bala" placeholder="Ingrese la velocidad (v1)" id="vel-bala">
-                        <select class="vel-bala" id="input_tem2">
-                            <option>m/s</option>
-                            <option>km/h</option>
-                        </select>
-                        <p></p>
-                    </li>
+        <p>
+            <label for="vel-bala">Velocidad Inicial de la bala (v1):</label>
+            <input type="range" id="vel-bala" name="velocidad1inicial" value="0" min="0" max="100" step="0.1" oninput="mostrarValor('valor2', this.value)">
+            <span id="valor2">0</span>
+            m/s
+        </p>
 
-                    <li>
-                        Masa del bloque (<label class="mas-bloque" for="mas-bloque">valor </label> y
-                        <label class="mas-bloque" for="input_tem3">unidad</label>):
-                        <input type="number" min="0" name="mas-bloque" placeholder="Ingrese la masa (m2)" id="mas-bloque">
-                        <select class="mas-bloque" id="input_tem3">
-                            <option>g</option>
-                            <option>kg</option>
-                        </select>
-                        <p></p>
-                    </li>
+        <p>
+            <label for="mas-bloque">Masa Inicial del bloque (m2):</label>
+            <input type="range" id="mas-bloque" name="masa2inicial" value="0" min="0" max="100" step="0.5" oninput="mostrarValor('valor3', this.value)">
+            <span id="valor3">0</span>
+            g
+        </p>
 
-                    <li>
-                        Velocidad inicial del bloque (<label class="vel-bloque" for="vel-bloque">valor </label> y
-                        <label class="vel-bloque" for="input_tem4">unidad</label>):
-                        <input type="number" min="0" name="vel-bloque" placeholder="Ingrese la velocidad (v2)" id="vel-bloque">
-                        <select class="vel-bloque" id="input_tem4">
-                            <option>m/s</option>
-                            <option>km/h</option>
-                        </select>
-                        <p></p>
-                    </li>
-                </ul>
-                <button type="submit" class="enviar">Enviar</button>
-
-                <button type="submit" class="restablecer">Restablecer los valores</button>
-            </div>
-
-            <div class="formu2">
-                <img width="390" height="350" src="../imagenes/pendulocanvas.png" alt="Imagen de un Ejercicio de Pendulo">
-            </div>
-
-            <div class=formu3>
-                <label for="altura-bloque-final">La altura final del bloque (h) es: </label> <input name="altura-bloque-final" placeholder="FALTA CALCULAR" id="altura-bloque-final">
-            </div>
-
-            </h3>
+            <p>
+            <button type="button" class="enviar" id="botoncalculo" onclick="calcularOp()/*; hacerAnimacion()*/"> Enviar </button>
+            <button type="submit" class="restablecer" id="botonrestablecer"> Restablecer los valores </button>
+            </p>
         </div>
     </form>
+
+
+
+    <div class="can">
+        <img width="390" height="350" src="../imagenes/pendulocanvas.png" alt="Imagen de un Ejercicio de Pendulo">
+    </div>
+
+    <div class="res">
+        <label for="altura_final">La altura final del bloque (h) es: </label>
+        <span id="altura_final" name="altura_final"> </span>
+        metros
+    </div>
+
 </div>
 
 <div class="volver4">

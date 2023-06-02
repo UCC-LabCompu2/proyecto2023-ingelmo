@@ -173,7 +173,7 @@ form {
 .dat{
     text-align: center;
     text-shadow: -1px 1px #3f4264;
-    margin: 5px 320px;
+    margin: 5px 400px;
     background-color: rgba(0,0,22,0.2);
     border: 2px solid #410c02;
     padding-top: 10px;
@@ -190,7 +190,7 @@ form {
     box-shadow: -5px 5px #410c02;
 }
 
-.formu2{
+.can{
     background-color: #ffffff;
     margin: 20px 100px;
     border: 2px solid #030303;
@@ -198,7 +198,7 @@ form {
     box-shadow: -5px 5px #410c02;
 }
 
-.formu3{
+.res{
     margin: 20px 150px;
     background-color: rgba(0,0,22,0.2);
     border: 2px solid #410c02;

@@ -21,7 +21,6 @@ let calcularOp = () => {
 
     if (masa1 === 0 || vel1 === 0 || masa2 === 0 || vel2 === 0) {
         alert("Error los valores ingresados no pueden ser iguales a cero ");
-        reset();//Como hacer ara resetear todo??
     }
     res1= (masa1+masa2)*(masa1+masa2); //Los calculos para encontrar la altura final del bloque
     res2= (vel1*vel1);
@@ -35,7 +34,7 @@ let calcularOp = () => {
 }
 
 /**
- * Esta funcion sirve para mostrar un canvas cuando se apreta el boton enviar y los valores ingresados son correctos
+ * Esta funcion sirve para mostrar en un canvas el dibujo de un pendulo luego de apretar el boton enviar
  * @method dibujarPendulo
  */
 let dibujarPendulo = () => {
@@ -74,6 +73,14 @@ let dibujarPendulo = () => {
     ctx.fill();
     ctx.closePath();
 
+    //Dibujo de la bala
+    ctx.beginPath();
+    ctx.fillStyle = "#2a3131"
+    ctx.arc(90 + margen, alturaMax - 154, 3.5, 0, 2*Math.PI);
+    ctx.fillRect(70 + margen, alturaMax - 158, 20, 8);
+    ctx.stroke();
+    ctx.fill();
+    ctx.closePath();
 
 }
 

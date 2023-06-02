@@ -35,10 +35,4 @@ let calcularOp = () => {
 }
 
 
-let mostrar_ocultar = (valor) =>{
-    if(valor==="mostrar"){
-        document.getElementsByName("res")[0].style.display = 'block';
-    }else{
-        document.getElementsByName("res")[0].style.display= 'none';
-    }
-}
+

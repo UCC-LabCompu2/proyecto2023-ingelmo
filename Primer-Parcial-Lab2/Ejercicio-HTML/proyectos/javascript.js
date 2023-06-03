@@ -9,8 +9,19 @@ let mostrarValor = (id, valor) => {
 }
 
 /**
- * Calcula la altura final que va a tener el bloque colgado luego de recibir el impacto de la bala
+ * Esta funcion sirve para resetear el canvas cuando uno aprete el botos de restablecer los valores
  * @method calcularOp
+ */
+let reset = () => {
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+
+    canvas.width = canvas.width;
+}
+
+/**
+ * Calcula la altura final que va a tener el bloque colgado luego de recibir los datos ingresados
+ * @method calcularOp, reset, dibujarPendulo
  */
 let calcularOp = () => {
     let masa1, masa2, vel1, res1, res2, res3, res4, resultadofinal;
@@ -132,15 +143,4 @@ let dibujarPendulo = () => {
     ctx.fill();
     ctx.closePath();
 
-}
-
-/**
- * Esta funcion sirve para resetear el canvas cuando uno aprete el botos de restablecer los valores
- * @method calcularOp
- */
-let reset = () => {
-    const canvas = document.getElementById("myCanvas");
-    const ctx = canvas.getContext("2d");
-
-    canvas.width = canvas.width;
 }

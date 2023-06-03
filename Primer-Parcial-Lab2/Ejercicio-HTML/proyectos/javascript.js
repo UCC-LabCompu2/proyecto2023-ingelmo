@@ -13,13 +13,13 @@ let mostrarValor = (id, valor) => {
  * @method calcularOp
  */
 let calcularOp = () => {
-    let masa1, masa2, vel1, vel2, res1, res2, res3, res4, resultadofinal;
+    let masa1, masa2, vel1, res1, res2, res3, res4, resultadofinal;
 
     masa1 = parseFloat(document.getElementById("mas-bala").value);
     vel1 = parseFloat(document.getElementById("vel-bala").value);
     masa2 = parseFloat(document.getElementById("mas-bloque").value);
 
-    if (masa1 === 0 || vel1 === 0 || masa2 === 0 || vel2 === 0) {
+    if (masa1 === 0 || vel1 === 0 || masa2 === 0) {
         alert("Error los valores ingresados no pueden ser iguales a cero ");
         reset();
     }else {
@@ -33,6 +33,43 @@ let calcularOp = () => {
         resultadofinal = Math.round(resultadofinal * 100) / 100; //Para redondear el resultado final, cuando se ingresen valores muy bajos va a dar 0 como resultado final
         document.getElementById("altura_final").textContent = resultadofinal;
         dibujarPendulo();
+
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+
+        //Mostrar palabras para el canvas:
+        //Texto de la masa 1
+        ctx.beginPath();
+        ctx.font="11pt Verdana";
+        ctx.fillStyle = "#050000";
+        ctx.fillText( "m1:", 60, 285);
+        ctx.fillText( masa1, 90, 285);
+        ctx.fillText( "g", 123, 285);
+        ctx.stroke();
+        ctx.fill();
+        ctx.closePath();
+
+        //Texto de la vel 1
+        ctx.beginPath();
+        ctx.font="11pt Verdana";
+        ctx.fillStyle = "#050000";
+        ctx.fillText( "v1:", 60, 320);
+        ctx.fillText( vel1, 90, 320);
+        ctx.fillText( "m/s", 123, 320);
+        ctx.stroke();
+        ctx.fill();
+        ctx.closePath();
+
+        //Texto de la masa 2
+        ctx.beginPath();
+        ctx.font="11pt Verdana";
+        ctx.fillStyle = "#050000";
+        ctx.fillText( "m2:", 230, 300);
+        ctx.fillText( masa2, 260, 300);
+        ctx.fillText( "g", 293, 300);
+        ctx.stroke();
+        ctx.fill();
+        ctx.closePath();
     }
 }
 
@@ -47,6 +84,15 @@ let dibujarPendulo = () => {
     const anchoMax = canvas.width;
     const alturaMax = canvas.height;
     const margen = 8;
+
+    //Dibujo del cuadrado 0 (Es para que cuando se muestran valores en el canvas se borren y se ingrese los nuevos correctamente )
+    ctx.beginPath();
+    ctx.fillStyle = "#ffffff"
+    //Cuadrado: (x, y, largo, ancho)
+    ctx.fillRect(45 + margen, alturaMax - 200 - margen, 400, 100);
+    ctx.stroke();
+    ctx.fill();
+    ctx.closePath();
 
     //Dibujo del cuadrado 1
     ctx.beginPath();
@@ -75,6 +121,7 @@ let dibujarPendulo = () => {
     ctx.stroke();
     ctx.fill();
     ctx.closePath();
+
 
     //Dibujo de la bala
     ctx.beginPath();

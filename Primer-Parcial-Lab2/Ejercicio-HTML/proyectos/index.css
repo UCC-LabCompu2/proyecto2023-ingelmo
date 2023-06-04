@@ -23,6 +23,7 @@ form {
     border: 2px solid rgba(13, 73, 62, 0.99);
     padding: 12px;
     box-shadow: -5px 5px #044b50;
+    text-shadow: 1px 1px #3f4264;
 }
 
 .imagenesindex{

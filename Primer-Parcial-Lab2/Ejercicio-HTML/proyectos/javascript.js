@@ -20,6 +20,67 @@ let reset = () => {
 }
 
 /**
+ * Esta funcion sirve para mostrar en un canvas el dibujo de un pendulo luego de apretar el boton enviar
+ * @method dibujarPendulo
+ */
+let dibujarPendulo = () => {
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+
+    const anchoMax = canvas.width;
+    const alturaMax = canvas.height;
+    const margen = 8;
+
+    //Dibujo del cuadrado 0 (Es para que cuando se muestran valores en el canvas se borren y se ingrese los nuevos correctamente )
+    ctx.beginPath();
+    ctx.fillStyle = "#ffffff"
+    //Cuadrado: (x, y, largo, ancho)
+    ctx.fillRect(45 + margen, alturaMax - 200 - margen, 400, 100);
+    ctx.stroke();
+    ctx.fill();
+    ctx.closePath();
+
+    //Dibujo del cuadrado 1
+    ctx.beginPath();
+    ctx.fillStyle = "#36b2c2"
+    //Cuadrado: (x, y, largo, ancho)
+    ctx.fillRect(180 + margen, alturaMax - 200 - margen, 150, 100);
+    ctx.stroke();
+    ctx.fill();
+    ctx.closePath();
+
+    //Dibujo del cuadrado 2
+    ctx.beginPath();
+    ctx.fillStyle = "#0d3b42"
+    //Cuadrado: (x, y, largo, ancho)
+    ctx.fillRect(margen, 0-margen, anchoMax-175, 90);
+    ctx.stroke();
+    ctx.fill();
+    ctx.closePath();
+
+    //Dibujo del cuadrado 3
+    ctx.beginPath();
+    ctx.fillStyle = "#061d21"
+    //Cuadrado: (x, y, largo, ancho)
+    ctx.fillRect(220 + margen, 90 - margen, 1, alturaMax - 290);
+    ctx.fillRect(290 + margen, 90 - margen, 1, alturaMax - 290);
+    ctx.stroke();
+    ctx.fill();
+    ctx.closePath();
+
+
+    //Dibujo de la bala
+    ctx.beginPath();
+    ctx.fillStyle = "#2a3131"
+    ctx.arc(90 + margen, alturaMax - 154, 3.5, 0, 2*Math.PI);
+    ctx.fillRect(70 + margen, alturaMax - 158, 20, 8);
+    ctx.stroke();
+    ctx.fill();
+    ctx.closePath();
+
+}
+
+/**
  * Calcula la altura final que va a tener el bloque colgado luego de recibir los datos ingresados
  * @method calcularOp, reset, dibujarPendulo
  */
@@ -82,65 +143,4 @@ let calcularOp = () => {
         ctx.fill();
         ctx.closePath();
     }
-}
-
-/**
- * Esta funcion sirve para mostrar en un canvas el dibujo de un pendulo luego de apretar el boton enviar
- * @method dibujarPendulo
- */
-let dibujarPendulo = () => {
-    const canvas = document.getElementById("myCanvas");
-    const ctx = canvas.getContext("2d");
-
-    const anchoMax = canvas.width;
-    const alturaMax = canvas.height;
-    const margen = 8;
-
-    //Dibujo del cuadrado 0 (Es para que cuando se muestran valores en el canvas se borren y se ingrese los nuevos correctamente )
-    ctx.beginPath();
-    ctx.fillStyle = "#ffffff"
-    //Cuadrado: (x, y, largo, ancho)
-    ctx.fillRect(45 + margen, alturaMax - 200 - margen, 400, 100);
-    ctx.stroke();
-    ctx.fill();
-    ctx.closePath();
-
-    //Dibujo del cuadrado 1
-    ctx.beginPath();
-    ctx.fillStyle = "#36b2c2"
-    //Cuadrado: (x, y, largo, ancho)
-    ctx.fillRect(180 + margen, alturaMax - 200 - margen, 150, 100);
-    ctx.stroke();
-    ctx.fill();
-    ctx.closePath();
-
-    //Dibujo del cuadrado 2
-    ctx.beginPath();
-    ctx.fillStyle = "#0d3b42"
-    //Cuadrado: (x, y, largo, ancho)
-    ctx.fillRect(margen, 0-margen, anchoMax-175, 90);
-    ctx.stroke();
-    ctx.fill();
-    ctx.closePath();
-
-    //Dibujo del cuadrado 3
-    ctx.beginPath();
-    ctx.fillStyle = "#061d21"
-    //Cuadrado: (x, y, largo, ancho)
-    ctx.fillRect(220 + margen, 90 - margen, 1, alturaMax - 290);
-    ctx.fillRect(290 + margen, 90 - margen, 1, alturaMax - 290);
-    ctx.stroke();
-    ctx.fill();
-    ctx.closePath();
-
-
-    //Dibujo de la bala
-    ctx.beginPath();
-    ctx.fillStyle = "#2a3131"
-    ctx.arc(90 + margen, alturaMax - 154, 3.5, 0, 2*Math.PI);
-    ctx.fillRect(70 + margen, alturaMax - 158, 20, 8);
-    ctx.stroke();
-    ctx.fill();
-    ctx.closePath();
-
 }

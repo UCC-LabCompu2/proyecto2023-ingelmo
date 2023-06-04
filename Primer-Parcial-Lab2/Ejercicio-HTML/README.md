@@ -20,6 +20,8 @@ Se trata de una página web en donde uno puede:
 | definicion.html     | Definición del proyecto       |
 | ejemplo.html        | Ejemplo del proyecto          |
 | ejercicio.html      | Ejercicio del proyecto        |
+| index.css           | Styles usados en la pagina    |
+| javascript.js       | Javascript usado en la pagina |
 
 ## Links del Proyecto: 
 [ **Link de la página Web**](https://ucc-labcompu2.github.io/proyecto2023-ingelmo/Primer-Parcial-Lab2/Ejercicio-HTML/proyectos/index.html)
@@ -28,3 +30,4 @@ Se trata de una página web en donde uno puede:
 
 [**Link del mockup utilizado**](https://github.com/UCC-LabCompu2/proyecto2023-ingelmo/tree/main/Primer-Parcial-Lab2/Ejercicio-HTML/MOCKUP)
 
+[**Link del sketch utilizado**](https://github.com/UCC-LabCompu2/proyecto2023-ingelmo/tree/main/Primer-Parcial-Lab2/Ejercicio-HTML/SKETCH)

@@ -68,7 +68,6 @@ let dibujarPendulo = () => {
     ctx.fill();
     ctx.closePath();
 
-
     //Dibujo de la bala
     ctx.beginPath();
     ctx.fillStyle = "#2a3131"

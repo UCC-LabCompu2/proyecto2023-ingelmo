@@ -13,7 +13,7 @@ let mostrarValor = (id, valor) => {
  * @method reset
  */
 let reset = () => {
-    //Resetea el dibujl del canvas
+    //Resetea el dibujo del canvas
     const canvas = document.getElementById("myCanvas");
     const ctx = canvas.getContext("2d");
     canvas.width = canvas.width;
@@ -99,12 +99,12 @@ let calcularOp = () => {
 
         resultadofinal = Math.round(resultadofinal * 100) / 100; //Para redondear el resultado final, cuando se ingresen valores muy bajos va a dar 0 como resultado final
         document.getElementById("altura_final").textContent = resultadofinal;
-        dibujarPendulo();
 
+        //Mostrar palabras en el canvas:
+        dibujarPendulo();
         const canvas = document.getElementById("myCanvas");
         const ctx = canvas.getContext("2d");
 
-        //Mostrar palabras para el canvas:
         //Texto de la masa 1
         ctx.beginPath();
         ctx.font="11pt Verdana";

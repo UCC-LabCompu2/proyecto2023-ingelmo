@@ -9,18 +9,18 @@ let mostrarValor = (id, valor) => {
 }
 
 /**
- * Esta funcion sirve para resetear el canvas cuando uno aprete el botos de restablecer los valores
- * @method calcularOp
+ * Esta funcion sirve para resetear el canvas cuando uno aprete el boton de "restablecer los valores"
+ * @method reset
  */
 let reset = () => {
+    //Resetea el dibujl del canvas
     const canvas = document.getElementById("myCanvas");
     const ctx = canvas.getContext("2d");
-
     canvas.width = canvas.width;
 }
 
 /**
- * Esta funcion sirve para mostrar en un canvas el dibujo de un pendulo luego de apretar el boton enviar
+ * Esta funcion sirve para mostrar en un canvas el dibujo de un pendulo, luego de apretar el boton enviar
  * @method dibujarPendulo
  */
 let dibujarPendulo = () => {
@@ -31,10 +31,9 @@ let dibujarPendulo = () => {
     const alturaMax = canvas.height;
     const margen = 8;
 
-    //Dibujo del cuadrado 0 (Es para que cuando se muestran valores en el canvas se borren y se ingrese los nuevos correctamente )
+    //Dibujo del cuadrado 0 (Es para que cuando se muestran valores en el canvas se borren y se ingrese los nuevos correctamente)
     ctx.beginPath();
     ctx.fillStyle = "#ffffff"
-    //Cuadrado: (x, y, largo, ancho)
     ctx.fillRect(45 + margen, alturaMax - 200 - margen, 400, 100);
     ctx.stroke();
     ctx.fill();
@@ -43,7 +42,6 @@ let dibujarPendulo = () => {
     //Dibujo del cuadrado 1
     ctx.beginPath();
     ctx.fillStyle = "#36b2c2"
-    //Cuadrado: (x, y, largo, ancho)
     ctx.fillRect(180 + margen, alturaMax - 200 - margen, 150, 100);
     ctx.stroke();
     ctx.fill();
@@ -52,7 +50,6 @@ let dibujarPendulo = () => {
     //Dibujo del cuadrado 2
     ctx.beginPath();
     ctx.fillStyle = "#0d3b42"
-    //Cuadrado: (x, y, largo, ancho)
     ctx.fillRect(margen, 0-margen, anchoMax-175, 90);
     ctx.stroke();
     ctx.fill();
@@ -61,7 +58,6 @@ let dibujarPendulo = () => {
     //Dibujo del cuadrado 3
     ctx.beginPath();
     ctx.fillStyle = "#061d21"
-    //Cuadrado: (x, y, largo, ancho)
     ctx.fillRect(220 + margen, 90 - margen, 1, alturaMax - 290);
     ctx.fillRect(290 + margen, 90 - margen, 1, alturaMax - 290);
     ctx.stroke();
@@ -80,8 +76,8 @@ let dibujarPendulo = () => {
 }
 
 /**
- * Calcula la altura final que va a tener el bloque colgado luego de recibir los datos ingresados
- * @method calcularOp, reset, dibujarPendulo
+ * Calcula la altura final que va a tener el bloque colgado luego de recibir los datos ingresados. Aparte en el canvas va a mostrar los distintos datos ingresados en sus respectivos dibujos
+ * @method calcularOp
  */
 let calcularOp = () => {
     let masa1, masa2, vel1, res1, res2, res3, res4, resultadofinal;

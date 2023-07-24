@@ -142,7 +142,7 @@ form {
 
 /**
  * Todo lo que se usa en el ejercicio.html:
- *  tit4, titulo4, cuerpopagina4, dat, formu1, formu2, formu3, enviar, restablecer, volver4
+ *  tit4, titulo4, cuerpopagina4, dat, can, can2, res, enviar, restablecer, volver4
  */
 
 .tit4{
@@ -180,7 +180,7 @@ form {
     box-shadow: -5px 5px #410c02;
 }
 
-.can{
+.can, .can2{
     text-align: center;
     background-color: #ffffff;
     margin: 20px 400px;
@@ -205,6 +205,10 @@ form {
 
 .restablecer{
     background-color: #fcad95;
+}
+
+.animar{
+    background-color: #f58364;
 }
 
 .volver4{

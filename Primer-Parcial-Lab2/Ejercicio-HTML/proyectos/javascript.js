@@ -31,7 +31,7 @@ var vbloqueh=0;
 var cont1=0;
 var cont2=0;
 var hfinal;
-var hfinal2;
+
 let dibujarPendulo = () => {
     const canvas = document.getElementById("myCanvas");
     const ctx = canvas.getContext("2d");

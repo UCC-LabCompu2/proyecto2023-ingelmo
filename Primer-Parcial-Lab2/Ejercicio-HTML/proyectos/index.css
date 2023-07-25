@@ -180,7 +180,7 @@ form {
     box-shadow: -5px 5px #410c02;
 }
 
-.can, .can2{
+.can{
     text-align: center;
     background-color: #ffffff;
     margin: 20px 400px;
@@ -205,10 +205,6 @@ form {
 
 .restablecer{
     background-color: #fcad95;
-}
-
-.animar{
-    background-color: #f58364;
 }
 
 .volver4{

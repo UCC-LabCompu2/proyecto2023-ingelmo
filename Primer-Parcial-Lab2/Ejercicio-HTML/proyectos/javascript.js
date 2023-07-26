@@ -142,10 +142,9 @@ let calcularOp = () => {
 
         resultadofinal = Math.round(resultadofinal * 100) / 100; //Para redondear el resultado final, cuando se ingresen valores muy bajos va a dar 0 como resultado final
         document.getElementById("altura_final").textContent = resultadofinal;
-        hfinal = resultadofinal;
+        hfinal = -resultadofinal;
 
         dibujarPendulo();
 
     }
 }
-
